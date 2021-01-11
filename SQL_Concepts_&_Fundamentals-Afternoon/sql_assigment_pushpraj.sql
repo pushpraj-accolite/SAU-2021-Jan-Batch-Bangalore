@@ -154,7 +154,7 @@ end$$
 
 DELIMITER ;
 
-call highest('101',@run);
+call highest('team1',@run);
 select @highestScore;
 
 
