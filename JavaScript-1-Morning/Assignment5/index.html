@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Validation</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <div>
+            <h3>Assignment-5</h3>
+            <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+                Name: <input type="text" name="fname" required>
+                <br><br>
+                Email: <input type="text" name="email" required>
+                <br><br>
+                Are you alive?(Tick if yes) <input type="radio" id="myRadio" name="test" required>
+                <br><br>
+                Gender
+                <select id="drop" required><br>
+                    <option></option>
+                    <option value="volvo">Male</option>
+                    <option value="saab">Female</option>
+                </select>
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </center>
+</body>
+
+</html>
