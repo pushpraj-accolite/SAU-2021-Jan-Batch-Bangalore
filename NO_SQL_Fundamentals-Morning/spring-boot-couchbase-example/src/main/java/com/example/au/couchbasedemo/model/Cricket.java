@@ -10,13 +10,21 @@ import com.sun.istack.NotNull;
 public class Cricket {
 	 	@Id
 	    String id;
-	    
+		
+		@NotNull
+    	@Field
 	    String name;
-	    
+		
+		@NotNull
+    	@Field
 	    float average;
-	    
+		
+		@NotNull
+    	@Field
 	    int runs;
-	    
+		
+		@NotNull
+    	@Field
 	    int wickets;
 	    
 	    public String getName() {
