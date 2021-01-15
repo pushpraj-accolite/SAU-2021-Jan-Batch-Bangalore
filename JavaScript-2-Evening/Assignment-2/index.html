@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Validation</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <div>
+            <h3>Assignment-2</h3>
+            <form name="myForm" onsubmit="return call()" method="POST">
+                First Name: <input type="text" name="fname" required>
+                <br><br>
+                Last Name: <input type="text" name="lname" required>
+                <br><br>
+                Age <input type="number" name="age" required>
+                <br><br>
+                Gender
+                <select name="gender" required>
+                    <option></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br><br>
+                Roll No: <input type="number" name="roll" required>
+                <br><br>
+                Date of Birth: <input type="date" name="dob" required>
+                <br><br>
+                Occupation: <input type="text" name="occupation" required placeholder="student">
+                <br><br>
+
+                <input type="submit" value="Submit">
+
+
+            </form>
+
+            <table style=" margin: 0 auto;text-align: left;margin-top: 50px;">
+                <tr>
+                    <td>First name</td>
+                    <td id="ans1"></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td id="ans2"></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td id="ans3"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td id="ans4"></td>
+                </tr>
+                <tr>
+                    <td>Roll no</td>
+                    <td id="ans5"></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td id="ans6"></td>
+                </tr>
+                <tr>
+                    <td>Occupation</td>
+                    <td id="ans7"></td>
+                </tr>
+            </table>
+        </div>
+    </center>
+</body>
+
+</html>
