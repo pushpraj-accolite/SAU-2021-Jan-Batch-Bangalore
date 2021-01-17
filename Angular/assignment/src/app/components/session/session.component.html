@@ -1,0 +1,36 @@
+<div style="position: absolute;left: 50%;top: 60%;transform: translate(-50%, -50%);padding: 10px;">
+    <ul>
+        <li *ngFor="let session of sessions" (click)="onSelect(session)" style="cursor:pointer">
+            <span [class.selected]="selectedSession === session">{{session.name}}</span>
+            <button style="margin-left: 10px;background-color: red;border-style: none;border-radius: 20px;"
+                (click)="delete_session(session)" [class.selected]="selectedSession === session">x</button>
+        </li>
+    </ul>
+
+    <br>
+    <form #addForm="ngForm" (ngSubmit)="add_item(addForm.value)">
+        <input type="text" ngModel name="session_name" placeholder="Enter Session name" />
+        <input type="text" ngModel name="trainer_name" placeholder="Enter Trainer name" />
+        <input type="date" ngModel name="session_date" placeholder="Session date" />
+        <br><br>
+        <button
+            style="background-color: #4CAF50;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;">
+            Add Session
+        </button>
+    </form>
+
+    <br><br>
+    <table style="border: 1px solid black;">
+        <tr>
+            <th>Session Name</th>
+            <th>Trainer Name</th>
+            <th>Session date</th>
+        </tr>
+        <tr>
+            <td>{{ selectedSession.name}}</td>
+            <td>{{ selectedSession.trainer }}</td>
+            <td>{{ selectedSession.date }}</td>
+        </tr>
+
+    </table>
+</div>

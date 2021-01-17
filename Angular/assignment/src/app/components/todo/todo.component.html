@@ -1,0 +1,14 @@
+<p>fetching... to do list</p>
+<ul>
+    <li *ngFor="let todo of todos" style="cursor:pointer" (click)="onSelecttodo(todo)">
+        <span [class.selected]="selectedTodo === todo">{{todo.id}}</span>
+    </li>
+</ul>
+
+<div
+    style="position: absolute;top:35%;left:50%;border:2px solid rgb(184, 245, 104);height:150px;width: 250px;padding-left: 5px;">
+    <p>Selected Todo:</p>
+    <p>Todo id: <b>{{selectedTodo.id}}</b></p>
+    <p>Todo title: <b>{{ selectedTodo.title}}</b></p>
+    <p>Completed: <b>{{selectedTodo.completed}}</b></p>
+</div>
