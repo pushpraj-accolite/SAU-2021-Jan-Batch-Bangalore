@@ -7,7 +7,7 @@ function primeFactors(n)
         n = n/2;  
     }
    
-    for (let i = 3; i <= Math.sqrt(n); i = i + 2)  
+    for ( let i = 3; i <= Math.sqrt(n); i = i + 2)  
     {  
         while (n % i == 0)  
         {  

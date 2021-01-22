@@ -5,7 +5,7 @@ function isSame(n)
 
     while(n != 0)
     {
-        if(n % 10 != prev)
+        if(n % 10 !=  prev)
         {
             return false;
         }

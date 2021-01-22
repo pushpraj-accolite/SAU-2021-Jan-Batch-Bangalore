@@ -4,4 +4,4 @@ DROP INDEX couchbase.idx_primary_cbdemo;
 
 #Adding a particular index
 
-CREATE INDEX new_index ON couchbasedemo;
+CREATE INDEX new_index ON couchbasedemo; 
